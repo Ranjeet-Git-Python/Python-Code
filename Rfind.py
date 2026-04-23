@@ -1,0 +1,15 @@
+str1 = " My name is rajnesha kumar, my work place in bangalore, kumar having tw0 friends"
+print("original string:", str1)
+
+start_index = str1.find("kumar", 0, len(str1))
+print("First occurrence of kumar starts at index:", start_index)
+last_index = str1.rfind("kumar")
+print("Last occurrence of kumar starts at index:", last_index)
+start_index = str1.rindex("kumar")
+print("Last occurrence of kumar starts at index:", start_index)
+end_index = str1.index("kumar")
+print("First occurrence of kumar starts at index:", end_index)
+replace_str = str1.replace("kumar", "singh", 1)
+print("String after replacement:", replace_str)
+count_kumar = str1.count("kumar", 0, 27)
+print("Number of occurrences of kumar:", count_kumar)

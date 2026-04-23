@@ -1,0 +1,7 @@
+Hi Team,
+Please contact support@example.com for technical issues. 
+You can also reach our billing department at billing.dept@service-provider.net.
+For personal inquiries, email john.doe123@gmail.com or jane_doe@yahoo.co.uk.
+Some invalid ones to ignore: "hello@world", "test@domain", and "@@doubleat.com"and
+1_abc12g_rtsf@gamil.co,in
+Special case: admin+urgent@company.org (this one uses a plus tag).
