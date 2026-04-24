@@ -16,8 +16,8 @@ while i<64:
 
 print(f"Total IPs generated: {counter}")
 #print(f"Total IPs in list: {len(list1)}")
-list1.pop(0)
-list1.pop(-1)
+# list1.pop(0)
+# list1.pop(-1)
 print(f"Total IPs in list: {len(list1)}")
 #print(list1)
 

@@ -8,7 +8,7 @@ def is_valid_email(email):
     return False
 
 
-email = "_abcranje_rt26@yahoo.com"
+email = "ranj@cisco.com"
 print(is_valid_email(email))
 
 # 2nd method
@@ -16,7 +16,7 @@ def is_valid_email(email):
     if "@" in email and "." in email:
         return True
     return False
-email = "user@example.com"
+email = "user@example.com,ranj@cisco.com"
 print(is_valid_email(email))
 
 # 3rd Method

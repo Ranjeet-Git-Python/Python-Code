@@ -20,7 +20,7 @@ print(dict1)
 pattern = r'(\d+)\s+(eth\d)\s+([0-9.]+)\s+(\w+)'
 result = re.findall(pattern,message)
 #print(dict(result))
-print(result)
+print("result:", result)
 dict2 = {}
 for i in result:
     dict2.update({i[0]:{x[0]:i[1],x[1]:i[2],x[2]:i[3]}})
