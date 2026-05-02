@@ -1,3 +1,4 @@
+#Question: Remove special symbols & punctuation from a string
 str1 = "/*Jon is @developer & musician!!" #Output: "Jon is developer musician"
 # Method 1: Using regular expressions
 import re

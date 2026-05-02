@@ -1,3 +1,4 @@
+#Q: You have a multi-line string that contains information about network interfaces, their IP addresses, and their status. The string is formatted as follows:
 import re
 message = '''   
         interface    ip    status

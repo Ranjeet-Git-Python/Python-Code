@@ -1,4 +1,4 @@
-#odd-indexed elements from the first list and even-indexed elements from the second# Outputs: "fl"
+#Question: Find odd-indexed elements from the first list and even-indexed elements from the second# Outputs: "fl"
 l1 = [3, 6, 9, 12, 15, 18, 21]
 l2 = [4, 8, 12, 16, 20, 24, 28]
 l1_odd = []

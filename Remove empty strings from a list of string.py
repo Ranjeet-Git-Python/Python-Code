@@ -1,3 +1,4 @@
+#Question: How to remove empty strings from a list of string in Python?
 str_list = ["Emma", "Jon", "", "Kelly", None, "Eric", ""]
 # Method 1: Using list comprehension
 output = [s for s in str_list if s]
