@@ -1,3 +1,4 @@
+#Question: Extract names and ages from a given text using regular expressions and return them as a dictionary.
 import re
 messages = '''
 jeska is 66 and jems is 34

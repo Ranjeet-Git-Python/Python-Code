@@ -1,4 +1,4 @@
-
+#Question: Validate email addresses from a text file and extract valid email addresses using regular expressions.
 import re
 def is_valid_email(email):
     pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'

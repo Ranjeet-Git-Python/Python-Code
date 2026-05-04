@@ -1,3 +1,4 @@
+#Question: Add a string in the middle of another string
 string1 = "Automation"
 string2 = "Testing"
 x = int(len(string1)/2)

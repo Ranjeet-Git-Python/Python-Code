@@ -1,3 +1,4 @@
+#Question: Write a Python program to find the second lowest grade among students and print the names of students who have that grade. The program should read student names and their grades from user input, store them in a nested list, and then determine the second lowest grade and the corresponding student names.
 # Get number of students
 n = int(input("Enter number of students: "))
 

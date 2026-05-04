@@ -1,3 +1,4 @@
+#Question: Write a Python program to solve a quadratic equation of the form ax^2 + bx + c = 0, where a, b, and c are coefficients provided by the user. The program should calculate the discriminant and determine the nature of the roots (real and distinct, real and equal, or complex) and then print the roots accordingly.
 import math
 
 def main():

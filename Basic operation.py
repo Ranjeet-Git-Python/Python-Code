@@ -1,3 +1,4 @@
+#Question: Perform basic operations on list, tuple, set, dictionary and string
 list1 = [4,40,50,45,78,89,40,"raja", "Ram", None]
 list1.append(90)
 print(list1)

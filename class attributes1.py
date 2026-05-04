@@ -1,3 +1,4 @@
+#Question: Create a class with class attributes and instance attributes, and demonstrate how to access them.
 class Dog:
 # Class attribute
     species = "Canis familiaris"

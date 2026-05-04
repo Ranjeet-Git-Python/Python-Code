@@ -1,3 +1,5 @@
+
+#Question: Write a Python program to calculate the factorial of a given number.
 input_no = int(input("Enter any number: "))
 factorial = 1
 for i in range(1, input_no + 1):
@@ -10,6 +12,7 @@ def factorial(n):
         return 1
     else:
         return n * factorial(n-1)
+
 
 input_no = int(input("Enter any number: "))
 print("The factorial of", input_no, "is:", factorial(input_no))

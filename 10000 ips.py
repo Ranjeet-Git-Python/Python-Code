@@ -1,3 +1,4 @@
+#Question: Generate a list of all possible IP addresses in the range
 i=0 
 list1 = []
 counter = 0

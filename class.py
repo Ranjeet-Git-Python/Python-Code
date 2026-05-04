@@ -1,4 +1,8 @@
+#Question: Create a class with class attributes and instance attributes, and demonstrate how to access them.
 class Student: 
+    # Class attribute
+    school_name = "ABC School"
+
     def __init__(self, student_id, student_name, class_name):
         self.student_id = student_id
         self.student_name = student_name

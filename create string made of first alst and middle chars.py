@@ -1,3 +1,4 @@
+#Question: Create a string made of the first, last, and middle characters of a given string. Also, extract the middle three characters from the string.
 string2 = "Automation Testing"
 first_char = string2[0]
 last_char = string2[-1]

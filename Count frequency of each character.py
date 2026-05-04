@@ -1,3 +1,4 @@
+#Question: Count the frequency of each character in a string and store it in a dictionary. Then, filter out the characters that appear only once.
 x = "Automation Testing"
 p = [char for char in x if char != " "]
 q = set(p)

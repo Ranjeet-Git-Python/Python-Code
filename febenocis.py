@@ -1,3 +1,4 @@
+#Question: Write a Python program to generate the Fibonacci sequence up to the 10th term.
 num = [0,1]
 num1=[0]
 i=0

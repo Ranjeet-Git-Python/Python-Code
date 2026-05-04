@@ -1,3 +1,4 @@
+#Question: Write a Python program to find the first and last occurrence of a substring in a given string. Also, replace the first occurrence of the substring with another string and count the number of occurrences of the substring in the given string.
 str1 = " My name is rajnesha kumar, my work place in bangalore, kumar having tw0 friends"
 print("original string:", str1)
 

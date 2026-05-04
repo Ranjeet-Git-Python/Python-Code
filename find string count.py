@@ -1,3 +1,4 @@
+#Question: Count the occurrences of a specific substring in a given string, ignoring case sensitivity. Also, count the number of vowels in the string, and check if the string starts with a specific prefix or ends with a specific suffix. Finally, convert the string to uppercase and lowercase, and swap the case of each character.
 str1 = "Welcome to USA. usa awesome, isn't it?"
 str2 = str1.lower().count("usa")
 print(str2)

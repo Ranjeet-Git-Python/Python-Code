@@ -1,3 +1,4 @@
+#Question: Remove all whitespace characters from a given string and print the cleaned string. Additionally, implement a function to remove the N-th character from a string, and another function to partition a string based on a specified separator. Finally, extract the file extension from a given filename and print it.
 str1 = " P y t h o n "   #Expected Output: Python
 str2 = ""
 for i in str1:

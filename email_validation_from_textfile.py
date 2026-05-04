@@ -1,3 +1,4 @@
+#Question: Validate email addresses from a text file and extract valid email addresses using regular expressions.
 import re
 
 def get_emails_from_file(file_path):
