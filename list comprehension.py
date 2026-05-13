@@ -106,11 +106,11 @@ result = flatten(nested_data)
 
 print(f"Original:  {nested_data}")
 print(f"Flattened: {result}")
-
+#palindrome
 s1= "A man, a plan, a canal: Panama"
 #Output: True
 l1 =[char.lower() for char in s1 if char.isalnum()]
-print("sentence is plandrom:", l1 == l1[::-1])
+print("sentence is palindrome:", l1 == l1[::-1])
 #2nd way
 def is_palindrome_sentence(sentence):
     # Filter out punctuation and spaces, convert to lowercase

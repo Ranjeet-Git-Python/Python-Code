@@ -365,7 +365,7 @@ except ValueError as e:
     print(f"Error: {e}")
     
 '''@property: This turns the score() method into a “getter.” You access it via s.score instead of s.score().
-@score.set:ter: This method is triggered when you try to use the = operator. It allows for “invisible” data validation.'''
+@score.setter: This method is triggered when you try to use the = operator. It allows for “invisible” data validation.'''
 '''Class Methods vs. Static Methods:
 Problem: Create a class Pizza that has a price attribute. Implement a @classmethod called margherita() that returns a pre-configured Pizza object and a @staticmethod called validate_topping() that checks if a topping is “healthy.”
 '''
