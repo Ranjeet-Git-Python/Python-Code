@@ -131,7 +131,7 @@ print(f"Is palindrome? {is_palindrome_sentence(test_s)}")
 l1=["apple", "education", "ice", "ocean", "python", "umbrella"]
 # Output: ['education', 'umbrella']
 l2 = []
-vowels = ["a","e","i","o","u"]
+vowels =  ["a","e","i","o","u"]
 for i in l1:
     if len(i)>5 and i[0].lower() in vowels:
         l2.append(i)

@@ -187,6 +187,8 @@ print(dict1)
 stock = {"apples": 34, "bananas": 12, "oranges": 57, "grapes": 8, "mangoes": 23}
 
 lowest = min(stock, key=stock.get)
+'''Use min(dict, key=dict.get) — this passes each key through dict.get to retrieve its value for comparison, returning the key whose value is the smallest.
+Alternatively, use min(dict.items(), key=lambda item: item[1]) to get the full (key, value) tuple for the minimum entry.'''
 print("Lowest stock item:", lowest)
 #Question 14. Create a dictionary from a list of tuples, where each tuple contains a key and a value.
 pairs = [("name", "Alice"), ("age", 25), ("city", "Paris")]
