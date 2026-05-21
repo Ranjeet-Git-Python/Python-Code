@@ -1,5 +1,5 @@
 log = '''System log found on 12/05/2026. The workstation XTZ-9812 has a 
-MAC address of 00-1A-2B-3C-4D-5E. The IPv4 address is 192.168.1.15 
+MAC address of 00-1A-2B-3C-4D-5E. The IPv4 address is 10.168.1.15 
 and the IPv6 address is 2001:0db8:85a3:0000:0000:8a2e:0370:7334. 
 The device serial is SN998877A. The registered employee is John Doe (ID: EMP-0452).
 Please reach out via john.doe@company.com or +91-9876543210. 
@@ -14,9 +14,10 @@ print(match)
 valid_ipv4_pattern1 = r'((25[0-5]|2[0-4][0-9]|1?[0-9]{1,2})\.){3}(25[0-5]|2[0-4][0-9]|1?[0-9]{1,2})'
 rusult = re.search(valid_ipv4_pattern1, log)
 print(rusult.group())
-valid_ipv4_pattern2 = r'((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9][0-9]|[0-9])\.){3}(25[0-5]|2[0-4][0-9]|1?[0-9]{1,2})'
+valid_ipv4_pattern2 = r'10.((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9][0-9]|[0-9])\.){2}(25[0-5]|2[0-4][0-9]|1?[0-9]{1,2})'
 match = re.search(valid_ipv4_pattern2, log)
-print(match.group())
+print(match)
+print("Match found:", match.group())
 ipv6_pattern = r'\b(?:[0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}\b'
 match = re.findall(ipv6_pattern, log)
 print(match)
