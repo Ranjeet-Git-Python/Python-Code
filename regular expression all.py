@@ -11,8 +11,8 @@ print(match)
 valid_ipv4_pattern = r'\b(?:(?:25[0-5]|2[0-4][0-9]|1?[0-9]{1,2})\.){3}(?:25[0-5]|2[0-4][0-9]|1?[0-9]{1,2})\b'
 match = re.findall(valid_ipv4_pattern, log)
 print(match)
-valid_ipv4_pattern1 = r'^((25[0-5]|2[0-4][0-9]|1?[0-9]{1,2})\.){3}(25[0-5]|2[0-4][0-9]|1?[0-9]{1,2})$'
-rusult = re.match(valid_ipv4_pattern1, log)
+valid_ipv4_pattern1 = r'((25[0-5]|2[0-4][0-9]|1?[0-9]{1,2})\.){3}(25[0-5]|2[0-4][0-9]|1?[0-9]{1,2})'
+rusult = re.search(valid_ipv4_pattern1, log)
 print(rusult)
 ipv6_pattern = r'\b(?:[0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}\b'
 match = re.findall(ipv6_pattern, log)
