@@ -1,11 +1,17 @@
-log = '''System log found on 12/05/2026. The workstation XTZ-9812 has a 
-MAC address of 00-1A-2B-3C-4D-5E. The IPv4 address is 10.168.1.15 
-and the IPv6 address is 2001:0db8:85a3:0000:0000:8a2e:0370:7334. 
-The device serial is SN998877A. The registered employee is John Doe (ID: EMP-0452).
-Please reach out via john.doe@company.com or +91-9876543210. 
-Verify tax documents at 560001 with PAN ABCDE1234F.'''
+# log = '''System log found on 12/05/2026. The workstation XTZ-9812 has a 
+# MAC address of 00-1A-2B-3C-4D-5E. The IPv4 address is 10.168.1.15 
+# and the IPv6 address is 2001:0db8:85a3:0000:0000:8a2e:0370:7334. 
+# The device serial is SN998877A. The registered employee is John Doe (ID: EMP-0452).
+# Please reach out via john.doe@company.com or +91-9876543210. 
+# Verify tax documents at 560001 with PAN ABCDE1234F.'''
 import re
+# with open ("text11.txt","r")as f:
+#     log =f.read()
+fid = open("text11.txt","r")
+log = fid.read()
 ipv4_pattern = r'\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b'
+#ipv4_pattern = r'\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b'
+#ipv4_pattern = r'\b(?:\d{1,3}\.){3}\d{1,3}\b'
 match = re.findall(ipv4_pattern, log)
 print(match)
 valid_ipv4_pattern = r'\b(?:(?:25[0-5]|2[0-4][0-9]|1?[0-9]{1,2})\.){3}(?:25[0-5]|2[0-4][0-9]|1?[0-9]{1,2})\b'
@@ -45,3 +51,4 @@ print(match)
 employee_id_pattern = r'\bEMP-\d{4}\b'
 match = re.findall(employee_id_pattern, log)
 print(match)
+fid.close()
