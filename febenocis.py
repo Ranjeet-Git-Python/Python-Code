@@ -8,3 +8,11 @@ while i<10:
     num1.append(num_add)
     i+=1
 print(num1)
+
+
+num = [0,1]
+n= 10
+for i in range(2,n+1):
+    num_add = num[-1]+num[-2]
+    num.append(num_add)
+print(num)

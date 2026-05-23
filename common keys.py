@@ -89,36 +89,13 @@ for i in range(x):
         l1.append(i*j)
     l2.append(l1)
 print(l2)
-#Question 8. Sort a list of strings in alphabetical order and join them back into a single string with a comma separator.
-str1 = "without,hello,bag,world"
-l1=str1.split(",")
-l1.sort()
-print(",".join(l1))
-#str1.split().sort()
-#print(str1)
-str1= '''Hello world
-Practics makes perfect'''
-print(str1.capitalize())
-print(str1.upper())
-print(str1)
-#2nd way
-l1=str1.split(" ")
-l2=[]
-for i in l1:
-    l2.append(i.upper())
+
 input1 = input("enter the sentence:")
 l1= [i for i in input1.split()]
 print(l1)
 words = input1.split(" ")
 print(" ".join(sorted(list(set(words)))))
-input1 = input("Enter the binary number:")
-l1 = input1.split(",")
-l2=[]
-for i in l1:
-    x = int(i,2)
-    if x%5==0:
-        l2.append(i)
-print(",".join(l2))
+
 dict1={'first':'Bob', 'last':'Smith'}
 print(str(dict1))
 print(type(str(dict1)))
