@@ -2,7 +2,7 @@
 str1 = " P y t h o n "   #Expected Output: Python
 str2 = ""
 for i in str1:
-    if i is not " ":
+    if i != " ":
         str2 += i
 print(str2)
 
