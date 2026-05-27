@@ -19,7 +19,7 @@ if len(students) < 2:
 else:
     # Sort by grade (index 1)
     sorted_students = sorted(students, key=lambda x: x[1])
-    
+    print("sorted_students: ", sorted_students)
     # Get the second lowest grade
     second_lowest_grade = sorted_students[1][1]
     

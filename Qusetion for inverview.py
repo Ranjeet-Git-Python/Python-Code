@@ -1,14 +1,9 @@
 # 1st way
-'''Question: Given two dictionaries, merge them into a single dictionary 
-where the keys are the unique keys from both dictionaries and the values 
-are lists of values from the original dictionaries that correspond to those keys.
-If a key is only present in one dictionary, its value should be a list containing 
-just that value.'''
 d1 = {"a": 1, "b": 2, "e":6}
 d2 = {"b": 3, "c": 4}
+#Output: {'a': [1], 'b': [2, 3], 'c': [4]}
 all_keys = set(d1.keys()) | set(d2.keys())
 print(all_keys)
-#Output: {'a': [1], 'b': [2, 3], 'c': [4]}
 d5 ={}
 for i in all_keys:
     values =[]
@@ -42,16 +37,6 @@ print(f"Grouped Merge: {merge_and_group(d1, d2)}")
 #question2: Given a dictionary where the keys are authors and the values are lists of their books, create a new dictionary that inverts this relationship, where the keys are book titles and the values are the corresponding authors.
 d1 = {"Orwell": ["1984", "Animal Farm"], "Huxley": ["Brave New World"]}
 #output = {'1984': 'Orwell', 'Animal Farm': 'Orwell', 'Brave New World': 'Huxley'}
-k1 = d1.keys()
-v1 = d1.values()
-d2 = {}
-print(k1)
-print(v1)
-for i in v1:
-    for j in range(len(i)):
-        d2[i[j]] = 0
-        
-print(d2)
 #2nd way
 def invert_bibliography(data):
     inverted = {}
@@ -93,14 +78,6 @@ def validate_relationships(list1, list2):
         print(f"The sets share these elements: {a & b}")
 
 validate_relationships([1, 2], [1, 2, 3, 4])
-
-#Question5: Given two sets, determine if one is a subset of the other, if they are disjoint, or if they share some common elements. Use set operations to find the relationships between the two sets.  
-setA = {1, 2, 3}
-setB = {1, 2, 3, 4, 5}
-print("A is subset of B: ", setA.issubset(setB))
-print("B is superset of A : ",setB.issuperset(setA))
-print("A is subset of B: " , setA.isdisjoint(setB))
-
 
 list1 = [101, 102, 103]
 list2 = [103, 104, 105]
