@@ -75,7 +75,9 @@ d2 = sorted(employees, key = lambda x:x["name"], reverse = True)
 print(d1)
 print(d2)
 
-#Question4: Given two lists, determine if one is a subset of the other, if they are disjoint, or if they share some common elements. Use set operations to find the relationships between the two lists.
+#Question4: Given two lists, determine if one is a subset of the other, if they are
+#  disjoint, or if they share some common elements. Use set operations to find the 
+# `relationships between the two lists.
 def validate_relationships(list1, list2):
     a = set(list1)
     b = set(list2)
