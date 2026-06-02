@@ -40,13 +40,14 @@ strs = ["flower","flow","flight"]
 print(longest_common_prefix(strs))
 
 #3rd method
+print("3rd method:")
 strs = ["flower","flow","flight"]
 prefix = strs[0]
 i = 0
 for s in strs[1:]:
     if s[i] != prefix[i]:
         prefix = prefix[:i]
-        print(prefix)
+        print("prefix:", prefix)
         break
     i+=1
 
