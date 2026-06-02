@@ -69,3 +69,8 @@ print("case insensitive searching")
 result = re.search(r"emma", target_string, re.IGNORECASE)
 print("Matching word:", result.group())
 # Output 'Emma'
+
+target_string = "Emma is a Baseball player who was born on June 17, 1993."
+import re
+
+print(re.search(r'emma', target_string, re.I).group())
