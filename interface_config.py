@@ -30,7 +30,7 @@ class InterfaceConfig:
 
         for token in tokens:
             if "=" in token:
-                key, value = token.split("=", 1)
+                key, value = token.split("=", 1) # split only on first '='
                 # auto-convert numeric values to int
                 self._params[key] = int(value) if value.isdigit() else value
 
