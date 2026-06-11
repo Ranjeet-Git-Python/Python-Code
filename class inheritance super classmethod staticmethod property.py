@@ -30,3 +30,6 @@ obj.walk()
 obj.speek
 print(Dog.bite())
 print(Dog.bark_sound())
+print(type(obj))
+print(type(Dog))
+print(type(Animal))
