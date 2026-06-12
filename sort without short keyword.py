@@ -9,3 +9,11 @@ for i in range(len(l1)):
         else:
             l1[j],l1[i]=l1[i],l1[j]
 print(l1)
+
+l1 = [40,30,4,23,97,327,645,64,743,902,100,2]
+l2 = l1.copy()
+for i in range(len(l1)):
+    for j in range(len(l1)):
+        if l1[i]>l1[j]:
+            l1[i],l1[j]=l1[j],l1[i]
+print(l1)

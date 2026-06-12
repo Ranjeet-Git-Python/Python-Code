@@ -15,3 +15,19 @@ grad1 = [student[0] for student in sorted_students if student[1] == second_lowes
 
 for item in grad1:
     print("-",item)
+
+#2nd way
+n1 = int(input("Enter the numer of student:"))
+
+students = []
+if n1<2:
+    print("student count should be more than two")
+else:
+    for i in range(n1):
+        stud1 = input("enter the student name:")
+        marks = int(input("Enter the student marks:"))
+        students.append([stud1,marks])
+sorted_student = sorted(students, key = lambda x:x[1])      
+print(sorted_student)
+second_lowest= sorted_student[1][1]
+print([student[0] for student in students if student[1] == second_lowest])

@@ -4,3 +4,7 @@ l1=str1.split(",")
 print(l1)
 l1.sort()
 print(",".join(l1))
+
+
+str1 = "without,hello,bag,world"
+print(" ".join(sorted(str1.split(','))))

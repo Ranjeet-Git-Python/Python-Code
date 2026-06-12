@@ -35,9 +35,9 @@ l1 = []
 l2 = []
 l3 = []
 for i in range(len(sample_list)):
-    if i < 3:
+    if i < len(sample_list)//3:
         l1.append(sample_list[i])
-    elif i>=3 and i <6:
+    elif i>=len(sample_list)//3 and i <2*len(sample_list)//3:
         l2.append(sample_list[i])
     else:
         l3.append(sample_list[i])

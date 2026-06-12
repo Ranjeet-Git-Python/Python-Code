@@ -5,8 +5,6 @@ import re
 clean_str = re.sub(r'[^\w\s]', '', str1)
 print("Cleaned string:", clean_str)
 
-# Method 2: Using string translation
-
 # method 3: Using a for loop and string concatenation
 clean_str = ""
 for char in str1:

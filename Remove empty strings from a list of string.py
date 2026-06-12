@@ -8,6 +8,12 @@ print("Output:", output)
 output = list(filter(None, str_list))
 print("Output:", output)
 
+mixed_data = [0, "apple", False, "banana", "", None, "orange"]
+
+# Pass None to clear out falsy elements
+clean_data = list(filter(None, mixed_data))
+print(clean_data)  # Output: ['apple', 'banana', 'orange']
+
 # Method 3: Using a for loop
 output = []
 for s in str_list:
