@@ -10,38 +10,6 @@ print("Common keys (2nd way):", common_keys)
 common_keys = [key for key in d1.keys() if key in d2]
 print("Common keys (3rd way):", common_keys)
 
-#question 2: Factorial of a number using recursion and iteration
-num1 = int(input("Enter the first number"))
-num2 = int(input("Enter the second number"))
-l1 =[]
-p= 1
-for i in range(num1,num2+1):
-    for j in range(1,i+1):
-        p=j*p
-    l1.append(str(p))
-    p=1
-str2=",".join(l1)
-print(str2)
-#2nd way
-def fact(n):
-    if n==1:
-        return 1
-    else:
-        return n*fact(n-1)
-        
-p=fact(4)
-print(p)
-#Question 3. factorial of a number using recursion and iteration between two numbers
-num1 = int(input("Enter the first number"))
-num2 = int(input("Enter the second number"))
-l1 =[]
-p= 1
-for i in range(num1,num2+1):
-    p=fact(i)
-    l1.append(str(p))
-    p=1
-str2=",".join(l1)
-print(str2)
 #Question 4. Create a dictionary with numbers between 1 and n as keys and their squares as values.
 dict1 = {}
 for i in range(num1,num2+1):

@@ -9,3 +9,4 @@ class Student:
         self.class_name = class_name 
 student = Student('V12', 'Frank Gibson', 'V')
 print(student.__dict__)
+print(student.school_name)  # Accessing class attribute

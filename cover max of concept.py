@@ -42,16 +42,13 @@ double = multiplier(2)
 print(double(5))
 
 #5. Lambda Functions: Anonymous one-line functions.
-
 square = lambda x: x * x
 print(square(4))
 
 #6. Comprehensions: Compact and efficient data creation.
-
 squares = [x*x for x in range(10)]
 
 #7. Magic (Dunder) Methods: Customize object behavior.
-
 class Book:
     def __init__(self, name):
         self.name = name
@@ -68,7 +65,6 @@ class User(metaclass=MyMeta):
     pass
 
 #9. Descriptors: Control attribute access.
-
 class Positive:
     def __get__(self, obj, owner):
         return obj._value
@@ -128,11 +124,11 @@ gc.collect()
 
 #15. Advanced OOP
 
-Multiple inheritance
-Method Resolution Order (MRO)
-Abstract Base Classes (ABC)
-Composition vs Inheritance
-Dataclasses
+#Multiple inheritance
+#Method Resolution Order (MRO)
+#Abstract Base Classes (ABC)
+#Composition vs Inheritance
+#Dataclasses
 from abc import ABC, abstractmethod
 
 class Animal(ABC):
@@ -140,21 +136,7 @@ class Animal(ABC):
     def sound(self):
         pass
 
-Recommended Learning Order:
-Comprehensions
-Lambda, Map, Filter, Reduce
-Iterators & Generators
-Closures
-Decorators
-Context Managers
-Advanced OOP
-Async Programming
-Multithreading & Multiprocessing
-Descriptors
-Metaclasses
-
-These topics are commonly considered the progression from intermediate to advanced Python.
-Below is a single Python program that demonstrates most of the important basic, intermediate, and advanced Python concepts in one place:
+#Below is a single Python program that demonstrates most of the important basic, intermediate, and advanced Python concepts in one place:
 
 """
 Python Master Demo
@@ -467,11 +449,8 @@ print("Filtered:", filtered)
 # Program End
 # ======================================
 
-print("\nAll Python Concepts Demonstrated Successfully!")
 
-This single script demonstrates about 90% of the Python concepts commonly asked in interviews, including:
-
-OOP (Inheritance, Polymorphism, Encapsulation)
+eritance, Polymorphism, Encapsulation)
 Decorators
 Generators
 Iterators
@@ -488,30 +467,19 @@ Type Hints
 Magic Methods
 Class & Static Methods
 
-These are the concepts expected from an intermediate-to-advanced Python developer.
-
-with detailed explanation
-
-A single program can demonstrate many Python features, but understanding why each feature exists is more important than memorizing code. Here's a structured walkthrough of the major Python concepts from basic to advanced.
-
-1. Variables and Data Types
-
-Variables store data in memory.
+#1. Variables and Data Types
+#Variables store data in memory.
 
 name = "Rahul"      # str
 age = 25            # int
 height = 5.9        # float
 is_student = True   # bool
-Explanation
-
-Python is dynamically typed, so you don't need to declare types explicitly.
+#Explanation: Python is dynamically typed, so you don't need to declare types explicitly.
 
 x = 10
 x = "Hello"  # Valid
 
-The type changes automatically.
-
-2. Operators
+#2. Operators
 a = 10
 b = 3
 
@@ -521,122 +489,90 @@ print(a * b)   # Multiplication
 print(a / b)   # Division
 print(a % b)   # Modulus
 print(a ** b)  # Power
-Why Important?
 
-Almost every program performs calculations or comparisons.
-
-3. Conditional Statements
+#3. Conditional Statements
 age = 20
 
 if age >= 18:
     print("Adult")
 else:
     print("Minor")
-Flow
-Condition True?
-      |
-   Yes ---> Execute IF block
-      |
-   No ----> Execute ELSE block
 
-Used for decision-making.
-
-4. Loops
-For Loop
+#4. Loops
+#For Loop
 for i in range(5):
     print(i)
 
-Output:
-
+#Output:
 0
 1
 2
 3
 4
-While Loop
+#While Loop
 count = 0
 
 while count < 5:
     print(count)
     count += 1
-Difference
-For	While
-Known iterations	Unknown iterations
-Easier	More flexible
 
-5. Functions
-
-Functions help reuse code.
-
+#5. Functions
+#Functions help reuse code.
+# Benefits
+# Reusability
+# Readability
+# Modularity
 def greet(name):
     return f"Hello {name}"
 
 print(greet("Rahul"))
-Benefits
-Reusability
-Readability
-Modularity
 
-6. Lambda Functions
-
-Anonymous functions.
+#6. Lambda Functions
+#Anonymous functions.
 
 square = lambda x: x*x
-
 print(square(5))
 
-Equivalent to:
-
+#Equivalent to:
 def square(x):
     return x*x
 
-Used with:
-
+#Used with:
 map()
 filter()
 sorted()
 
-7. *args and **kwargs
-
-*args
-
-Accepts unlimited positional arguments.
+#7. *args and **kwargs
+#*args
+#Accepts unlimited positional arguments.
 
 def total(*numbers):
     return sum(numbers)
 
 print(total(1,2,3,4))
-**kwargs
-
-Accepts unlimited keyword arguments.
+#**kwargs
+#Accepts unlimited keyword arguments.
 
 def info(**data):
     print(data)
 
 info(name="Rahul", age=25)
 
-Output:
-
+#Output:
 {'name': 'Rahul', 'age': 25}
 
-8. List Comprehension
-
-Traditional:
+#8. List Comprehension
+#Traditional:
 
 squares = []
-
 for i in range(5):
     squares.append(i*i)
 
-Pythonic:
-
+#Pythonic:
 squares = [i*i for i in range(5)]
-Structure
-[expression for item in iterable]
+#Structure [expression for item in iterable]
 
-9. Object-Oriented Programming (OOP)
-
-OOP models real-world objects.
+#9. Object-Oriented Programming (OOP) OOP models real-world objects.
 
 class Student:
 
@@ -648,15 +584,15 @@ class Student:
 
 s = Student("Rahul")
 s.display()
-Components
-Class
-Object
-Attributes
-Methods
+# Components
+# Class
+# Object
+# Attributes
+# Methods
 
-10. Encapsulation
+# 10. Encapsulation
 
-Protects data.
+# Protects data.
 
 class Bank:
 
@@ -665,17 +601,13 @@ class Bank:
 
     def get_balance(self):
         return self.__balance
-Why?
+# Why?
+# Prevents direct modification.
+# bank.__balance = 0
+# Won't affect actual balance.
 
-Prevents direct modification.
-
-bank.__balance = 0
-
-Won't affect actual balance.
-
-11. Inheritance
-
-Reuse code from another class.
+#11. Inheritance
+#Reuse code from another class.
 
 class Animal:
 
@@ -688,16 +620,14 @@ class Dog(Animal):
 dog = Dog()
 dog.sound()
 
-Output:
+#Output:
+# Some sound
+# Benefits
+# Reusability
+# Less duplication
 
-Some sound
-Benefits
-Reusability
-Less duplication
-
-12. Polymorphism
-
-Same method, different behavior.
+# 12. Polymorphism
+# Same method, different behavior.
 
 class Dog:
     def sound(self):
@@ -711,14 +641,12 @@ animals = [Dog(), Cat()]
 for animal in animals:
     animal.sound()
 
-Output:
+# Output:
+# Bark
+# Meow
 
-Bark
-Meow
-
-13. Magic Methods (Dunder Methods)
-
-Methods beginning and ending with "__".
+# 13. Magic Methods (Dunder Methods)
+# Methods beginning and ending with "__".
 
 class Student:
 
@@ -728,54 +656,46 @@ class Student:
     def __str__(self):
         return self.name
 s = Student("Rahul")
-
 print(s)
 
-Without __str__:
+# Without __str__:
+# <__main__.Student object at ...>
+# With __str__:
+# Rahul
 
-<__main__.Student object at ...>
-
-With __str__:
-
-Rahul
-
-14. Exception Handling
-
-Handle runtime errors.
+# 14. Exception Handling
+# Handle runtime errors.
 
 try:
     result = 10 / 0
 
 except ZeroDivisionError:
     print("Cannot divide by zero")
-Structure
+# Structure
 try:
-    risky code
+    #risky code
 
 except:
-    handle error
+    #handle error
 
 finally:
-    cleanup code
+    #cleanup code
 
-15. File Handling
-
-Writing:
+# 15. File Handling
+# Writing:
 
 with open("data.txt", "w") as file:
     file.write("Hello")
 
-Reading:
+# Reading:
 
 with open("data.txt", "r") as file:
     print(file.read())
-Why use with?
+# Why use with?
+# Automatically closes file.
 
-Automatically closes file.
-
-16. Iterators
-
-Objects that produce values one at a time.
+# 16. Iterators
+# Objects that produce values one at a time.
 
 numbers = iter([1,2,3])
 

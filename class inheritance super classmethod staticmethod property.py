@@ -1,10 +1,11 @@
 class Animal:
-    name1 = "saru"
+    name1 = "sairu"
     def __init__(self,name,bridg):
         self.name = name
         self.bridg = bridg
     def balk(self):
         print("animal speak ")
+
 class Dog(Animal):
     name2 = "dogi"
     def __init__(self,name,bridg,color):
