@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Elements & Tag</title>
+</head>
+<body>
+
+    <!-- Heading -->
+    <h1>Welcome to My Web Page</h1>
+    <h2>About This Page</h2>
+
+    <!-- Paragraphs and Text Formatting -->
+    <p>This is a <strong>sample paragraph</strong> to <br>show <em>how text looks</em> on a web page.</p>
+
+
+
+    <hr>
+
+    <!-- Link -->
+    <p>Visit <a href="https://www.google.com" target="_blank">Google</a></p>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">About</a> |
+        <a href="#">Contact</a>
+    </nav>
+
+    <hr>
+
+    <!-- Image -->
+    <h3>Website Logo</h3>
+    <img src="logo.png" alt="Website Logo" width="150">
+
+    <!-- Audio -->
+    <h3>Sample Audio</h3>
+    <audio controls>
+        <source src="sample.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- Video -->
+    <h3>Sample Video</h3>
+    <video width="320" height="240" controls>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <!-- Div and Span -->
+    <div>
+        <h4>This is inside a div</h4>
+        <p>This is grouped <span style="color:red;">with a red word</span> using span.</p>
+    </div>
+
+    <!-- Lists -->
+    <h3>Unordered List</h3>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+    </ul>
+
+    <h3>Ordered List</h3>
+    <ol>
+        <li>Step One</li>
+        <li>Step Two</li>
+        <li>Step Three</li>
+    </ol>
+
+    <!-- Table -->
+    <h3>User Table</h3>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>john@example.com</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>jane@example.com</td>
+            <td>30</td>
+        </tr>
+    </table>
+
+    <!-- Form -->
+    <h3>Contact Form</h3>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <input type="checkbox" id="terms">
+        <label for="terms">I agree to the terms</label><br>
+        <input type="checkbox" id="subscribe">
+        <label for="subscribe">Subscribe to newsletter</label><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Button Tag Example -->
+    <h3>Simple Button</h3>
+    <button onclick="alert('Button clicked!')">Click Me</button>
+
+    <!-- Comments -->
+    <!-- This is a single-line comment -->
+
+    <!--
+        This is a multi-line comment.
+        You can write instructions here for developers.
+        These lines will not be shown on the actual web page.
+    -->
+
+</body>
+</html>
