@@ -1,4 +1,6 @@
-#Question: Write a function to find the longest common prefix string amongst an array of strings. If there is no common prefix, return an empty string "".
+#Question: Write a function to find the longest common
+#  prefix string amongst an array of strings. If there is
+#  no common prefix, return an empty string "".
 def longest_common_prefix(strs):
     if not strs:
         return ""
@@ -41,13 +43,15 @@ print(longest_common_prefix(strs))
 
 #3rd method
 print("3rd method:")
-strs = ["flower","flow","flight"]
+strs = ["flower","flow","floight"]
 prefix = strs[0]
-i = 0
-for s in strs[1:]:
-    if s[i] != prefix[i]:
-        prefix = prefix[:i]
-        print("prefix:", prefix)
-        break
-    i+=1
+for i in range(len(prefix)):
+    for s in strs[1:]:
+        if i >= len(s) or s[i] != prefix[i]:
+            prefix = prefix[:i]
+            print("prefix:", prefix)
+            break
+    else:
+        continue
+    break
 
