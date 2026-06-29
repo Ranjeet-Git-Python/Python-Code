@@ -43,7 +43,7 @@ print(longest_common_prefix(strs))
 
 #3rd method
 print("3rd method:")
-strs = ["flower","flow","floight"]
+strs = ["flower","flow","flowight"]
 prefix = strs[0]
 for i in range(len(prefix)):
     for s in strs[1:]:
