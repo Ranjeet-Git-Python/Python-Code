@@ -1,0 +1,8 @@
+#Question 14. Create a dictionary from a list of tuples, where each tuple contains a key and a value.
+pairs = [("name", "Alice"), ("age", 25), ("city", "Paris")]
+dict1={i[0]:i[1] for i in pairs}
+print(dict1)
+#2nd way
+pairs = [("name", "Alice"), ("age", 25), ("city", "Paris")]
+result = dict(pairs)
+print(result)

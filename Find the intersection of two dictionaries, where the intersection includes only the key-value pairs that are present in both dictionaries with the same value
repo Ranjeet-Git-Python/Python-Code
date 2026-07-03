@@ -1,0 +1,18 @@
+#Question 16. Find the intersection of two dictionaries, where the intersection 
+# includes only the key-value pairs that are present in both dictionaries with the same value.
+d1 = {"a": 1, "b": 2, "c": 3}
+d2 = {"b": 20, "d": 40}
+#Keys only in d1: {'a', 'c'}
+dict2={key for key in d1.keys() if key not in d2}
+print(dict2)
+#2nd way
+only_in_d1 = d1.keys() - d2.keys()
+print("Keys only in d1:", only_in_d1)
+#intersection of items in two dictionary
+d1 = {"a": 1, "b": 2, "c": 3} 
+d2 = {"a": 1, "b": 99, "c": 3}
+#Output: Intersection: {'a': 1, 'c': 3}
+dict2={item for item in d1.items() if item in d2.items()}
+print(dict2)
+intersection = {k: d1[k] for k in d1.keys() & d2.keys() if d1[k] == d2[k]}
+print("Intersection:", intersection)

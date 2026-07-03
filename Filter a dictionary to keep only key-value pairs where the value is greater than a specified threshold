@@ -1,0 +1,6 @@
+#Question 11. Filter a dictionary to keep only key-value pairs where the value is greater than a specified threshold.
+scores = {"Alice": 82, "Bob": 45, "Carol": 91, "Dave": 58, "Eve": 73} 
+#— keep only scores greater than 60
+#Output: {'Alice': 82, 'Carol': 91, 'Eve': 73}
+dict1 = {i:j for i,j in scores.items() if  j>60}
+print(dict1)

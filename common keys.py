@@ -10,44 +10,9 @@ print("Common keys (2nd way):", common_keys)
 common_keys = [key for key in d1.keys() if key in d2]
 print("Common keys (3rd way):", common_keys)
 
-#Question 4. Create a dictionary with numbers between 1 and n as keys and their squares as values.
-dict1 = {}
-for i in range(num1,num2+1):
-    dict1.update({i:i*i})
-print(dict1)
 
-num1 = input("Enter the first number")
-x=num1.split(",")
-print(x)
-print(tuple(x))
-#Question 5. Map two lists into a dictionary.
-class abc():
-   
-    def __init__(self):
-        pass
-    def getstring(self):
-        input1 = input("enter string:")
-        self.input1=input1
-        
-    def printstring(self):
-        print("print string:", self.input1.upper())
-
-obj = abc()
-obj.getstring()
-obj.printstring()
-#Question 6. Square root of a number using math module
-import math
-input1 = input("enter number as string:")
-l1=input1.split(",")
-l2=[]
-c=50
-h= 30
-for i in l1:
-    Q=math.sqrt((2*c*int(i))/h)
-    l2.append(str(int(Q)))
-
-print(",".join(l2))
-#Question 7. Create a 2D list (list of lists) with dimensions x and y, where each element is the product of its indices.
+#Question 7. Create a 2D list (list of lists) with dimensions x and y, 
+# where each element is the product of its indices.
 x=3
 y=5
 l2=[]
