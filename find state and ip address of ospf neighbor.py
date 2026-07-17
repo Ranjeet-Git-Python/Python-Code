@@ -5,4 +5,5 @@ log = '''Neighbor ID     Pri   State           Dead Time   Address         Inter
 import re
 pattern = r'\S+\s+\d+\s+(\S+)\s+\S+\s+((?:\d+\.){3}\d+)'
 match = re.findall(pattern,log)
-print(match)
+for item in match:
+    print(f"State: {item[0]}, IP Address: {item[1]}")
