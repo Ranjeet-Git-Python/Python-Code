@@ -1,5 +1,6 @@
 #Question: Generate a list of all possible IP addresses in the range
 i=0 
+k=0
 list1 = []
 counter = 0
 while i<64:
