@@ -9,6 +9,7 @@ print(list_2)	# output => [1, 2, [3, 5, 12], 11]
 print(list_1)	# output => [1, 2, [3, 5, 12], 4]
 
 # deep
+list_1 = [1, 2, [3, 5, 6], 4]
 list_3 = deepcopy(list_1)
 list_3[3] = 10
 list_3[2].append(13)
